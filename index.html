@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Exercícios Estrutura Sequencial</h1>
+
+    <section class="exercicio">
+
+        <h2>Exercício 1:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que mostre a mensagem "Alô, Mundo!" na tela.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <button onclick="aloMundo()">Clique aqui para alerta</button>
+        </div>
+    </section>
+
+    <section class="exercicio">
+
+        <h2>Exercício 2:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que peça um número e então mostre a mensagem O número informado
+            foi [número].</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="numero">Informe o número:</label>
+            <input type="text" name="numero" id="numero"><br><br>
+
+            <button onclick="mostraNumero()">Mostrar Número</button>
+            <p id="imprimeNumero"></p>
+        </div>
+
+    </section>
+
+    <section class="exercicio">
+
+        <h2>Exercício 3:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que peça dois números e imprima a soma.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="primeiroNumero">Primeiro número:</label>
+            <input type="text" name="primeiroNumero" id="primeiroNumero"><br><br>
+            <label for="segundoNumero">Segundo número:</label>
+            <input type="text" name="segundoNumero" id="segundoNumero"><br><br>
+            <button onclick="somaNumeros()">Somar</button>
+            <p id="soma"></p>
+        </div>
+
+    </section>
+
+    <section class="exercicio">
+
+        <h2>Exercício 4:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que peça as 4 notas bimestrais e mostre a média.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="nota1">Primeira nota:</label>
+            <input type="text" name="nota1" id="nota1"><br><br>
+            <label for="nota2">Segunda nota:</label>
+            <input type="text" name="nota2" id="nota2"><br><br>
+            <label for="nota3">Terceira nota:</label>
+            <input type="text" name="nota3" id="nota3"><br><br>
+            <label for="nota4">Quarta nota:</label>
+            <input type="text" name="nota4" id="nota4"><br><br>
+            <button onclick="calculaMedia()">Calcular Média</button>
+            <p id="media"></p>
+        </div>
+
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 5:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que converta metros para centímetros.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="metros">Informe a medida em metros:</label>
+            <input type="text" name="metros" id="metros"><br><br>
+            <button onclick="converteCentimetros()">Converter para Centímetros</button>
+            <p id="centimetros"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 6:</h2>
+
+        <p class="descricao-exercicio">Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="raio">Informe o raio(cm):</label>
+            <input type="text" name="raio" id="raio"><br><br>
+            <button onclick="calculaArea()">Calcular Área</button><br>
+            <p id="area"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 7:</h2>
+
+        <p class="descricao-exercicio">
+            Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="ladoQuadrado">Lado do quadrado(cm):</label>
+            <input type="text" name="ladoQuadrado" id="ladoQuadrado"><br><br>
+            <button onclick="dobroArea()">Calcular</button><br>
+            <p id="resultado-dobro"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 8:</h2>
+
+        <p class="descricao-exercicio">
+            Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e
+            mostre o total do seu salário no referido mês.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="valorHora">Valor da hora(R$):</label>
+            <input type="text" name="valorHora" id="valorHora"><br><br>
+
+            <label for="horasTrabalhadas">Horas trabalhadas:</label>
+            <input type="text" name="horasTrabalhadas" id="horasTrabalhadas"><br><br>
+
+            <button onclick="calculaSalario()">Calcular Salário</button><br>
+            <p id="resultado-salario"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 9:</h2>
+
+        <p class="descricao-exercicio">
+            Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus
+            Celsius.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="temperatura">Temperatura (F°):</label>
+            <input type="text" name="temperatura" id="temperatura"><br><br>
+
+            <button onclick="converteCelsius()">Converter para Celsius</button><br>
+            <p id="temperatura-celsius"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 10:</h2>
+
+        <p class="descricao-exercicio">
+            Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="temp-celsius">Temperatura (C°):</label>
+            <input type="text" name="temp-celsius" id="temp-celsius"><br><br>
+
+            <button onclick="converteFahrenheit()">Converter para Fahrenheit</button><br>
+            <p id="temp-fahrenheit"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 11:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+            1 - o produto do dobro do primeiro com metade do segundo.
+            2 - a soma do triplo do primeiro com o terceiro.
+            3 - o terceiro elevado ao cubo.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="num1-inteiro">Primeiro nº inteiro:</label>
+            <input type="text" name="num1-inteiro" id="num1-inteiro"><br><br>
+            <label for="num2-inteiro">Segundo nº inteiro:</label>
+            <input type="text" name="num2-inteiro" id="num2-inteiro"><br><br>
+            <label for="num-real">Número Real:</label>
+            <input type="text" name="num-real" id="num-real"><br><br>
+
+            <button onclick="calculaTudo()">Calcular</button><br>
+            <p id="resultado-calcula-tudo"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 12:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando
+            a seguinte fórmula:
+            (72.7*altura) - 58
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="altura">Informe sua altura(m):</label>
+            <input type="text" name="altura" id="altura"><br><br>
+
+
+            <button onclick="calculaPesoIdeal()">Peso Ideal</button><br>
+            <p id="resultado-peso-ideal"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 13:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            Tendo como dado de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+            Para homens: (72.7*altura) - 58
+            Para mulheres: (62.1*altura) - 44.7
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="altura2">Informe sua altura(m):</label>
+            <input type="text" name="altura2" id="altura2"><br><br>
+
+
+            <button onclick="calculaPesoIdeal2()">Peso Ideal</button><br>
+            <p id="resultado-peso-ideal2"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 14:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 kg) deve pagar uma multa de R$ 4,00 por quilo excedente.
+            João precisa que você faça um programa que leia a variável 'peso' (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar.
+            Imprima os dados do programa com as mensagens adequadas.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="pesoPesca">Peso da pesca(kg):</label>
+            <input type="text" name="pesoPesca" id="pesoPesca"><br><br>
+
+
+            <button onclick="calculaExcedente()">Calcular</button><br>
+            <p id="resultado-pesca"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 15:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda,
+            8% para o INSS e 5% para o sindicato, faça um programa que nos dê:
+            1 - salário bruto.
+            2 - quanto pagou ao INSS.
+            3 - quanto pagou ao sindicato.
+            4 - o salário líquido.
+            5 - calcule os descontos e o salário líquido, conforme a tabela abaixo:
+        <table>
+
+            <tr>
+                <td>+ Salário Bruto : R$</td>
+            </tr>
+            <tr>
+                <td>- IR (11%) : R$</td>
+            </tr>
+            <tr>
+                <td>- INSS (8%) : R$</td>
+            </tr>
+            <tr>
+                <td>- Sindicato ( 5%) : R$</td>
+            </tr>
+            <tr>
+                <td>= Salário Liquido : R$</td>
+            </tr>
+            <td></td>
+        </table>
+
+        </p>
+        <p class="descricao-exercicio">Obs.: Salário Bruto - Descontos = Salário Líquido.</p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="valor-hora">Valor por hora(R$):</label>
+            <input type="text" name="valor-hora" id="valor-hora"><br><br>
+
+            <label for="horas-de-trabalho">Horas trabalhadas(R$):</label>
+            <input type="text" name="horas-de-trabalho" id="horas-de-trabalho"><br><br>
+
+
+            <button onclick="calculaSalarioEDescontos()">Calcular</button><br>
+            <p id="salario-final"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 16:</h2>
+
+        <p class="descricao-exercicio">
+            Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a
+            ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é
+            vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a
+            serem compradas e o preço total.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="area-para-pintar">Área a ser pintada(m²):</label>
+            <input type="text" name="area-para-pintar" id="area-para-pintar"><br><br>
+
+            <button onclick="calculaValorPintura()">Calcular Custo</button><br>
+            <p id="valor-pintura"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 17:</h2>
+
+        <p class="descricao-exercicio white-space-pre">
+            Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:
+            - comprar apenas latas de 18 litros;
+            - comprar apenas galões de 3,6 litros;
+            - misturar latas e galões, de forma que o preço seja o menor.
+            Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="total-area-pintura">Área a ser pintada(m²):</label>
+            <input type="text" name="total-area-pintura" id="total-area-pintura"><br><br>
+
+            <button onclick="calculaPintura()">Calcular Custo</button><br>
+            <p id="valor-total-pintura"></p>
+        </div>
+    </section>
+
+    <section class="exercicio">
+        <h2>Exercício 18:</h2>
+
+        <p class="descricao-exercicio">
+        Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps),
+        calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+        </p>
+
+        <div class="solucao-container">
+            <h3>Solução:</h3>
+            <label for="tamanho-arquivo">Tamanho do arquivo(MB):</label>
+            <input type="text" name="tamanho-arquivo" id="tamanho-arquivo"><br><br>
+            <label for="velocidade-internet">Velocidade da Internet(Mbps):</label>
+            <input type="text" name="velocidade-internet" id="velocidade-internet"><br><br>
+
+            <button onclick="calculaTempoDownload()">Tempo para Download</button><br>
+            <p id="tempo-de-download"></p>
+        </div>
+    </section>
+
+</body>
+
+</html>
